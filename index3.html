@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JSX and Babel</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@18.2.0/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+      // Your JSX code here
+
+      // Conditional Rendering in JSX
+
+      let rootId = document.getElementById("root")
+
+      let flag = true;
+
+      let element = flag ? <p>your statement is true</p> : <p> Seize the day</p>
+
+      let rootEle = ReactDOM.createRoot(rootId);
+      rootEle.render(element);
+
+
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
